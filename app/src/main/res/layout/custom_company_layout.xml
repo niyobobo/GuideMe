@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_company"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/small_padding"
+    android:layout_marginEnd="@dimen/big_padding"
+    android:layout_marginLeft="@dimen/big_padding"
+    android:layout_marginRight="@dimen/big_padding"
+    android:layout_marginStart="@dimen/big_padding"
+    android:layout_marginTop="@dimen/small_padding"
+    android:orientation="horizontal">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_padding">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/img_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:text="@string/name"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:text="@string/address"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:text="@string/position"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:text="@string/contact"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:text="@string/desc"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:id="@+id/txtCatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:text="@string/category"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:text="@string/prices"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/big_padding"
+            android:layout_marginStart="@dimen/big_padding"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/order">
+
+            <TextView
+                android:id="@+id/c_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text"
+                tools:text="@string/name" />
+
+            <TextView
+                android:id="@+id/c_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:padding="@dimen/card_padding"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text"
+                tools:text="@string/address" />
+
+            <TextView
+                android:id="@+id/c_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text"
+                tools:text="@string/position" />
+
+            <TextView
+                android:id="@+id/c_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text"
+                tools:text="@string/contact" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:padding="@dimen/card_padding"
+                android:text="@string/desc"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:id="@+id/c_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text"
+                tools:text="@string/category" />
+
+            <TextView
+                android:id="@+id/c_prices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/big_text"
+                tools:text="@string/prices" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorAccent"
+            app:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profileImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage"
+            app:layout_constraintVertical_bias="0.395"
+            app:srcCompat="@drawable/ic_edit" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/big_padding"
+            android:text="@string/share"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/big_text"
+            app:layout_constraintBottom_toBottomOf="@+id/profileImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/extra_padding"
+            android:layout_marginRight="@dimen/extra_padding"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/big_padding"
+            android:text="@string/order"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/big_text"
+            app:layout_constraintBottom_toBottomOf="@+id/profileImage"
+            app:layout_constraintEnd_toStartOf="@+id/share"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage"
+            app:layout_constraintVertical_bias="0.56" />
+
+        <ImageView
+            android:id="@+id/getLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/big_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fab"
+            app:srcCompat="@drawable/ic_location" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

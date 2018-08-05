@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".admin.map.MapActivity">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/MapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/searchBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_size"
+        android:layout_margin="@dimen/extra_padding"
+        android:background="@drawable/search_field"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="@dimen/extra_padding"
+        android:drawableStart="@drawable/ic_search"
+        android:hint="@string/search"
+        android:inputType="textCapWords"
+        android:padding="@dimen/big_padding"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/big_text"/>
+
+    <Button
+        android:id="@+id/registerCompany"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/extra_padding"
+        android:background="@color/colorPrimary"
+        android:text="@string/register"
+        android:textColor="@color/white_color" />
+</FrameLayout>

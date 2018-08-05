@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/extra_padding">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:text="@string/compose_message_to_notify_client"
+        android:textAllCaps="true"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/big_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/txt_number"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/normal_size"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_round"
+        android:gravity="center_vertical"
+        android:padding="@dimen/big_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        tools:text="TextView" />
+
+    <EditText
+        android:id="@+id/edt_message"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="@dimen/big_padding"
+        android:background="@drawable/edit_text_round"
+        android:gravity="start"
+        android:hint="@string/enter_message"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="@dimen/big_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_number" />
+
+    <Button
+        android:id="@+id/btn_send_msg"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/normal_size"
+        android:layout_marginTop="@dimen/big_text"
+        android:background="@color/colorPrimary"
+        android:text="@string/send_message"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/big_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_message" />
+
+</android.support.constraint.ConstraintLayout>

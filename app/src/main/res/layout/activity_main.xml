@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:padding="@dimen/big_padding"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/small_padding"
+        android:text="@string/welcome_to"
+        android:textColor="@color/white_color"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="@dimen/normal_size"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/small_padding"
+        android:text="@string/travel_guide_mobile_application"
+        android:textColor="@color/white_color"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_travel"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_below="@id/header_title"
+        android:layout_marginBottom="@dimen/big_padding"
+        android:layout_marginEnd="@dimen/big_padding"
+        android:layout_marginLeft="@dimen/big_padding"
+        android:layout_marginRight="@dimen/big_padding"
+        android:layout_marginStart="@dimen/big_padding"
+        android:layout_marginTop="@dimen/normal_size"
+        android:background="@drawable/button"
+        android:text="@string/travel"
+        android:textAllCaps="true"
+        android:textColor="@drawable/color_state" />
+
+    <Button
+        android:id="@+id/btn_admin"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_below="@+id/btn_travel"
+        android:layout_margin="@dimen/big_padding"
+        android:background="@drawable/button"
+        android:text="@string/admin"
+        android:textAllCaps="true"
+        android:textColor="@drawable/color_state" />
+
+</RelativeLayout>

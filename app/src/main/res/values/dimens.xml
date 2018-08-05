@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="big_padding">10dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="normal_size">45dp</dimen>
+    <dimen name="extra_padding">15dp</dimen>
+    <dimen name="big_text">16sp</dimen>
+    <dimen name="card_padding">3dp</dimen>
+</resources>

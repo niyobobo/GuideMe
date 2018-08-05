@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/extra_padding">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/big_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:background="@color/view_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/big_padding"
+                android:layout_marginRight="@dimen/big_padding"
+                android:padding="@dimen/small_padding"
+                android:text="@string/street_name"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:id="@+id/road"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/big_padding"
+                android:layout_marginRight="@dimen/big_padding"
+                android:padding="@dimen/small_padding"
+                android:textSize="@dimen/big_text"
+                tools:text="@string/street_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/big_padding"
+                android:layout_marginEnd="@dimen/big_padding"
+                android:layout_marginRight="@dimen/big_padding"
+                android:padding="@dimen/small_padding"
+                android:text="@string/coordinates"
+                android:textSize="@dimen/big_text" />
+
+            <TextView
+                android:id="@+id/coordinates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/big_padding"
+                android:layout_marginEnd="@dimen/big_padding"
+                android:layout_marginRight="@dimen/big_padding"
+                android:padding="@dimen/small_padding"
+                android:textSize="@dimen/big_text"
+                tools:text="@string/coordinates" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_size"
+            android:layout_marginBottom="@dimen/big_padding"
+            android:background="@drawable/edit_text_round"
+            android:hint="@string/company_name"
+            android:inputType="textCapWords"
+            android:padding="@dimen/big_padding" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_size"
+            android:layout_marginBottom="@dimen/big_padding"
+            android:background="@drawable/edit_text_round"
+            android:hint="@string/contact"
+            android:inputType="textCapWords"
+            android:padding="@dimen/big_padding" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_size"
+            android:layout_marginBottom="@dimen/big_padding"
+            android:background="@drawable/edit_text_round" />
+
+        <EditText
+            android:id="@+id/priceList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/big_padding"
+            android:background="@drawable/edit_text_round"
+            android:gravity="start"
+            android:hint="@string/mention_price"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="@dimen/big_padding" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/big_padding"
+            android:background="@drawable/edit_text_round"
+            android:gravity="start"
+            android:hint="@string/describe_services_provided"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="@dimen/big_padding" />
+
+        <Button
+            android:id="@+id/add"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginTop="@dimen/extra_padding"
+            android:background="@color/colorPrimary"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="@string/register_company"
+            android:textAllCaps="true"
+            android:textColor="@color/white_color" />
+    </LinearLayout>
+</ScrollView>
